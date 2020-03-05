@@ -1,7 +1,7 @@
 year = int(input("Enter Year\n"))
 p=0
 leap=0
-c=year
+c=year-1600
 if(year%100==0):
   if(year%400==0):
     leap==1
@@ -34,12 +34,12 @@ for k in range(12):
      print(day[i],end="   ")
   print("\n")
   if(m==0):
-    if((4+p)%7==0):
+    if((6+p)%7==0):
      for j in range(6):
       print(end="      ")
       t+=1
     else:
-     for j in range(((4+p)%7)-1):
+     for j in range(((6+p)%7)-1):
       print(end="      ")
       t+=1
    
